@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Product Page</title>
+    <style>
+        .for-product{
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Header 1 Start-->
+
+    <nav class="header-1">
+        <h1>LOGO</h1>
+        <div class="search-container">
+        <form class="header-1-form" action="search">
+            <input type="search" placeholder="search here..">
+            <img class="searchicon" src="./Icons/Searchicon.png" alt="" width="20px">
+        </form>
+        </div>
+        <div class="iconsh1">
+            <a href="./favourite-item.html"><img src="./Icons/heart.png" alt="" width="20px"</a>
+            <a href="./cart.html"><img src="./Icons/cart.png" alt="" width="20px" ></a>
+            <a href="./login-page.html"><img src="./Icons/user.png" alt="" width="20px"></a>
+        </div>
+    </nav>
+
+    <!--Header 1 End-->
+
+    <!--Header 2 Start-->
+
+    <nav>
+        <div class="logoh2">
+            <h1>LOGO</h1>
+        </div>
+        <ul class="ulh2" id="menulist">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./product-page.html">PRODUCTS</a></li>
+            <li><a href="./Pricing.html">PRICING</a></li>
+            <li><a href="./about-page.html">ABOUT</a></li>
+            <li><a href="./contactus-page.html">CONTACT US</a></li>
+        </ul>
+        <div class="menuicon">
+            <img class="header1icon" src="./Icons/menu.png" alt="Menu png" width="25px" onclick="toggleMenu()">
+        </div>
+    </nav>
+
+    <!--Header 2 End-->
+
+    
+    <!--Home Product Area 1-->
+    <div class="products-containers">
+        <h1 class="for-product">OUR PRODUCTS</h1>
+        <div class="main-products">
+            <div class="pr-1">
+                <img src="./Products/7.jpg" alt="First Product Image">
+                <h1>Bulk Whatsapp Sender</h1>
+                <p>Bulk Whatsapp Sender Software with only one time payment.</p>
+                <div class="for-b-p">
+                    <h3>$20</h3>
+                    <button onclick="redirectToPayment('Bulk Whatsapp Sender', 20)">Buy Now</button>
+                </div>
+            </div>
+            <div class="pr-1">
+                <img src="./Products/8.jpg" alt="Second Product Image">
+                <h1>Landing page design</h1>
+                <p>500+ Landing page design in different categories.</p>
+                <div class="for-b-p">
+                    <h3>$30</h3>
+                    <button onclick="redirectToPayment('Landing page design', 30)">Buy Now</button>
+                </div>
+            </div>
+            <div class="pr-1">
+                <img src="./Products/9.jpg" alt="Third Product Image">
+                <h1>Sound Pack Bundle</h1>
+                <p>1M+ Sound Effect Bundle pack in very cheap price.</p>
+                <div class="for-b-p">
+                    <h3>$15</h3>
+                    <button onclick="redirectToPayment('Sound Pack Bundle', 15)">Buy Now</button>
+                </div>
+            </div>
+            
+        </div>
+
+     <!--Home Product Area 1 End-->
+    
+    <!--Home Product Area 2-->
+    <div class="main-products">
+        <div class="pr-1">
+            <img src="./Products/10.jpg" alt="">
+            <h1>Rank Math Pro</h1>
+            <p>Get the best seo plugin rank math seo in very cheap price</p>
+            <div class="for-b-p">
+                <h3>$20</h3>
+                <button onclick="redirectToPayment('Rank Math Pro', 20)">Buy Now</button>
+            </div>
+        </div>
+        <div class="pr-1">
+            <img src="./Products/11.jpg" alt="">
+            <h1>Astra Theme Pro</h1>
+            <p>Get Astra theme pro version in very cheap price.</p>
+            <div class="for-b-p">
+                <h3>$40</h3>
+                <button onclick="redirectToPayment('Astra Theme Pro', 40)">Buy Now</button>
+            </div>
+        </div>
+        <div class="pr-1">
+            <img src="./Products/12.jpg" alt="">
+            <h1>Chatgpt Prompt</h1>
+            <p>Get a very High Quality prompt in very cheap price.</p>
+            <div class="for-b-p">
+                <h3>$5</h3>
+                <button onclick="redirectToPayment('Chatgpt Prompt', 5)">Buy Now</button>
+            </div>
+        </div>    
+</div>
+        
+        <!--Home Product Area 2 End-->
+
+        <!--Home Product Area 1-->
+
+        <div class="main-products">
+            <div class="pr-1">
+                <img src="./Products/1.jpg" alt="First Product Image">
+                <h1>Elementor Pro Lifetime</h1>
+                <p>Get Elementor Pro for Lifetime + 1000 Wordpress theme and Plugins.</p>
+                <div class="for-b-p">
+                    <h3>$25</h3>
+                    <button onclick="redirectToPayment('Elementor Pro Lifetime', 25)">Buy Now</button>
+                </div>
+            </div>
+            <div class="pr-1">
+                <img src="./Products/2.jpg" alt="Second Product Image">
+                <h1>AI Reels Bundle Pack</h1>
+                <p>32000+ Ai Reels Bundle can be used for Instagram, Tiktok, and Youtube.</p>
+                <div class="for-b-p">
+                    <h3>$10</h3>
+                    <button onclick="redirectToPayment('AI Reels Bundle Pack', 10)">Buy Now</button>
+                </div>
+            </div>
+            <div class="pr-1">
+                <img src="./Products/3.jpg" alt="Third Product Image">
+                <h1>Shopify Themes Bundle</h1>
+                <p>1000+ Shopify Themes Bundle for Unlimited Website and Lifetime Access.</p>
+                <div class="for-b-p">
+                    <h3>$30</h3>
+                    <button onclick="redirectToPayment('Shopify Themes Bundle', 30)">Buy Now</button>
+                </div>
+            </div>
+            
+        </div>
+
+     <!--Home Product Area 1 End-->
+    
+    <!--Home Product Area 2-->
+    <div class="main-products">
+        <div class="pr-1">
+            <img src="./Products/4.jpg" alt="">
+            <h1>Canva Pro Lifetime</h1>
+            <p>Get Canva Pro for Lifetime + 2000 Design Templates and Font Pack.</p>
+            <div class="for-b-p">
+                <h3>$5</h3>
+                <button onclick="redirectToPayment('Canva Pro Lifetime', 5)">Buy Now</button>
+            </div>
+        </div>
+        <div class="pr-1">
+            <img src="./Products/5.jpg" alt="">
+            <h1>E-Book Bundle</h1>
+            <p>800+ E-Book Bundle in 30+ Categories in very Cheap Price.</p>
+            <div class="for-b-p">
+                <h3>$15</h3>
+                <button onclick="redirectToPayment('E-Book Bundle', 15)">Buy Now</button>
+            </div>
+        </div>
+        <div class="pr-1">
+            <img src="./Products/6.jpg" alt="">
+            <h1>Ultimate Creater Bundle</h1>
+            <p>Bundle Include Adobe Photoshop, After Effect, Premier Pro and Illustrator.</p>
+            <div class="for-b-p">
+                <h3>$35</h3>
+                <button onclick="redirectToPayment('Ultimate Creater Bundle', 35)">Buy Now</button>
+            </div>
+        </div>    
+</div>
+
+    <div class="more-p-button">
+        <button class="m-p-b"><a href="#">Comming Soon</a></button>
+    </div>
+
+
+        <!--Footer Start-->
+        <div class="footer-container">
+            <div class="f-aboutus">
+                <h2>About Us</h2>
+                <p>From expertly crafted resources to exclusive plans tailored to your needs, explore and purchase solutions designed to make your life easier and more productive.</p>
+                <ul class="sci">
+
+                </ul>
+            </div>
+            <div class="f-quicklinks">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="./index.html">Home Page</a></li>
+                    <li><a href="./Pricing.html">Our Pricing</a></li>
+                    <li><a href="./about-page.html">About us</a></li>
+                    <li><a href="./contactus-page.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="f-pricing">
+                <h2>Products</h2>
+                <ul>
+                    <li><a href="./product-page.html">E-books</a></li>
+                    <li><a href="./product-page.html">Software</a></li>
+                    <li><a href="./product-page.html">Accounts</a></li>
+                    <li><a href="./product-page.html">Ai Reels</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2024 <a href="./index.html">Digital Zub.</a> All Rights Reserved.</p>
+        </div>
+
+        <!--Footer End-->
+
+</body>
+
+<script>
+    let menulist = document.getElementById("menulist")
+    menulist.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "400px"
+        } else {
+            menulist.style.maxHeight = "0px"
+        }
+    }
+    function redirectToPayment(productName, price) {
+        // Redirect to payment.html with product details in URL parameters
+        const url = `payment.html?product=${encodeURIComponent(productName)}&price=${price}`;
+        window.location.href = url;
+    }
+
+
+</script>
+
+</html>

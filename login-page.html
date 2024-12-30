@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Login/Register</title>
+    <style>
+        .login-container {
+            display: flex;
+            width: 80%;
+            height: 500px;
+            max-width: 900px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px black;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .login-left {
+            flex: 1;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .login-left h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .login-left label {
+            display: block;
+            margin-top: 15px;
+            color: #666;
+            font-size: 12px;
+        }
+
+        .login-left input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #4384f5;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #4384f5;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #4384f5;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .login-right h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .login-right p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .sign-up-btn {
+            background: none;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 700px) {
+            .login-container {
+                flex-direction: column;
+            }
+
+            .login-right {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!--Header 1 Start-->
+
+    <nav class="header-1">
+        <h1>LOGO</h1>
+        <div class="search-container">
+        <form class="header-1-form" action="search">
+            <input type="search" placeholder="search here..">
+            <img class="searchicon" src="./Icons/Searchicon.png" alt="" width="20px">
+        </form>
+        </div>
+        <div class="iconsh1">
+            <a href="./favourite-item.html"><img src="./Icons/heart.png" alt="" width="20px"</a>
+            <a href="./cart.html"><img src="./Icons/cart.png" alt="" width="20px" ></a>
+            <a href="./login-page.html"><img src="./Icons/user.png" alt="" width="20px"></a>
+        </div>
+    </nav>
+
+    <!--Header 1 End-->
+
+    <!--Header 2 Start-->
+
+    <nav>
+        <div class="logoh2">
+            <h1>LOGO</h1>
+        </div>
+        <ul class="ulh2" id="menulist">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./product-page.html">PRODUCTS</a></li>
+            <li><a href="./Pricing.html">PRICING</a></li>
+            <li><a href="./about-page.html">ABOUT</a></li>
+            <li><a href="./contactus-page.html">CONTACT US</a></li>
+        </ul>
+        <div class="menuicon">
+            <img class="header1icon" src="./Icons/menu.png" alt="Menu png" width="25px" onclick="toggleMenu()">
+        </div>
+    </nav>
+
+    <!--Header 2 End-->
+
+
+    <div class="login-container">
+        <div class="login-left">
+            <h2>Sign In</h2>
+            <form action="#">
+                <label for="username">USERNAME</label>
+                <input type="text" id="username" placeholder="Username" required>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+        </div>
+        <div class="login-right">
+            <h2>Welcome to Login Page</h2>
+            <p>Don't have an account?</p>
+            <button class="btn sign-up-btn">Sign Up</button>
+        </div>
+    </div>
+
+
+
+     <!--Footer Start-->
+     <div class="footer-container">
+        <div class="f-aboutus">
+            <h2>About Us</h2>
+            <p>From expertly crafted resources to exclusive plans tailored to your needs, explore and purchase solutions designed to make your life easier and more productive.</p>
+            <ul class="sci">
+
+            </ul>
+        </div>
+        <div class="f-quicklinks">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./Pricing.html">Our Pricing</a></li>
+                <li><a href="./about-page.html">About us</a></li>
+                <li><a href="./contactus-page.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="f-pricing">
+            <h2>Products</h2>
+            <ul>
+                <li><a href="./product-page.html">E-books</a></li>
+                <li><a href="./product-page.html">Software</a></li>
+                <li><a href="./product-page.html">Accounts</a></li>
+                <li><a href="./product-page.html">Ai Reels</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <p>&copy; 2024 <a href="./index.html">Digital Zub.</a> All Rights Reserved.</p>
+    </div>
+
+    <!--Footer End-->
+ 
+
+
+</body>
+
+<script>
+    let menulist = document.getElementById("menulist")
+menulist.style.maxHeight = "0px";
+
+function toggleMenu(){
+    if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "400px"
+    } else {
+        menulist.style.maxHeight = "0px"
+    }
+}
+</script>
+
+</html>
